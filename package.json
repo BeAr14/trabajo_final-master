@@ -20,6 +20,7 @@
     "@angular/router": "^14.0.6",
     "bootstrap": "^5.2.0",
     "jquery": "^3.6.0",
+    "ng-circle-progress": "^1.6.0",
     "popper.js": "^1.16.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
@@ -27,7 +28,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.0.6",
-    "@angular/cli": "^14.0.6",
+    "@angular/cli": "^14.1.0",
     "@angular/compiler-cli": "^14.0.6",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
