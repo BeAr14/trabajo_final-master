@@ -5,6 +5,8 @@
 div{
     background-color: #151D3B;
     text-align: center;
+    color: white;
+
 }
 /*etiqueta perfil*/
 @media(min-width:576px){
@@ -12,7 +14,7 @@ div{
         position: absolute;
         width: 15%;
         border-radius: 100%;
-        box-shadow: 3px 3px 3px grey;
+        box-shadow: 3px 2px 4px rgba(211, 210, 210, 0.368);
         left: 5%;
         top: 600px;
 
