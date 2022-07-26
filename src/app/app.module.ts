@@ -12,6 +12,8 @@ import { ExpeLaboralComponent } from './component/expe-laboral/expe-laboral.comp
 import { EducacionComponent } from './component/educacion/educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HardComponent } from './component/hard/hard.component';
+import { ProyectosComponent } from './component/proyectos/proyectos.component';
+import { IdiomasComponent } from './component/idiomas/idiomas.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { HardComponent } from './component/hard/hard.component';
     AcercaDeComponent,
     ExpeLaboralComponent,
     EducacionComponent,
-    HardComponent
+    HardComponent,
+    ProyectosComponent,
+    IdiomasComponent
   ],
   imports: [
     BrowserModule,
