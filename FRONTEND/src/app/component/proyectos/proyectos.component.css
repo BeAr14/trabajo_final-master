@@ -1,0 +1,20 @@
+.row{
+    padding: 20px;
+}
+
+div{
+    background-color: #151D3B;
+    text-align: left;
+    color: white;
+
+}
+
+.texto {
+    display: inline-block;
+    text-align: justify;
+}
+
+.imagen {
+    display: inline-block;
+    text-align: justify;
+}

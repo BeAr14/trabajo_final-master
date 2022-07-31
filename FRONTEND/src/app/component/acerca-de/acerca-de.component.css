@@ -6,15 +6,16 @@ div{
     background-color: #151D3B;
     text-align: center;
     color: white;
-
+   
 }
+
 /*etiqueta perfil*/
 @media(min-width:576px){
     #perfil{
         position: absolute;
         width: 15%;
         border-radius: 100%;
-        box-shadow: 3px 2px 4px rgba(211, 210, 210, 0.368);
+        box-shadow: 3px 3px 8px rgba(211, 210, 210, 0.368);
         left: 5%;
         top: 600px;
 
@@ -28,7 +29,7 @@ div{
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 5%;
-        top: 600px;
+        top: 950px;
 
     }
 }
@@ -37,6 +38,7 @@ div{
 /*etiqueta nombre*/
 #nombre{
     font-weight: bold;
-    margin-top: 30%;
+    font-size: xx-large;
+    margin-top: 7px;    
     
 }

@@ -1,0 +1,17 @@
+.row{
+    padding: 50px;
+}
+
+div{
+    background-color: #151D3B;
+    text-align: center;
+    color: white;
+
+}
+footer{
+    color: white;
+    font-size: 14px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
