@@ -21,17 +21,18 @@ img{
 }
 .row{
     padding: 20px;
+    background-color: #1a1a1a;
 }
 
 div{
-    background-color: #151D3B;
+   
     text-align: center;
     color: white;
    
 }
 
 /*---Para celular---*/
-@media (max-width: 575px)
+@media (max-width: 575px){
 .container{
     flex-direction: column;
 }
@@ -42,4 +43,5 @@ div{
 }
 .redesocial img{
     margin: 0.2em;
+}
 }

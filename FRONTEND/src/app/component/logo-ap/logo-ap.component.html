@@ -5,11 +5,12 @@
     </div>
     <div class="redesocial">
         <div>
-            <a href=""><img src="../../../assets/logo_Github.png" id="github"></a>
-            <a href=""><img src="../../../assets/logo_instagram.png" id="instagram"></a>
-            <a href=""><img src="../../../assets/logo_face.png" id="facebook"></a>
-            <a href=""><img src="../../../assets/logo_linkedin.png" id="linkedin"></a>
-            <button type="button" class="btn btn-outline-light">INGRESAR</button>
+            <a href="https://github.com/BeAr14"><img src="../../../assets/logo_Github.png" id="github"></a>
+            <a href="https://www.instagram.com/begoarbeloa"><img src="../../../assets/logo_instagram.png" id="instagram"></a>
+            <a href="https://www.facebook.com/begoarbeloa"><img src="../../../assets/logo_face.png" id="facebook"></a>
+            <a href="https://www.linkedin.com/in/bego%C3%B1a-arbeloa-68944619"><img src="../../../assets/logo_linkedin.png" id="linkedin"></a>
+            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESAR</button>
+            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
         </div>
     </div>
 </div>

@@ -14,6 +14,11 @@ import { HardComponent } from './component/hard/hard.component';
 import { ProyectosComponent } from './component/proyectos/proyectos.component';
 import { IdiomasComponent } from './component/idiomas/idiomas.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { LoginComponent } from './component/login/login.component';
+import { PortfolioComponent } from './component/portfolio/portfolio.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule} from '@angular/common/http';
+import { interceptorProvider } from './servicios/interceptor-service';
 
 @NgModule({
   declarations: [
@@ -27,14 +32,21 @@ import { FooterComponent } from './component/footer/footer.component';
     HardComponent,
     ProyectosComponent,
     IdiomasComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }

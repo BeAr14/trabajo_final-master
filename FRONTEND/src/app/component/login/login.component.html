@@ -1,0 +1,31 @@
+<div class="container py-5 h-100">
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+      <div class="card bg-dark text-white">
+
+    <h1 class="m-5">Iniciar Sesión</h1>
+    <form #f="" (ngSubmit)="onLogin()" novalidate>
+  
+  <div class="form-group">
+    <label for="email">Usuario</label>
+    <input type="email" class="form-control" id="nombreUsuario" name="nombreUsuario" placeholder="Escribir email">
+  </div>
+
+  <div class="form-group">
+    <label for="pasword">Contraseña</label>
+    <input type="password" class="form-control" id="password" placeholder="Contraseña">
+  </div>
+
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+
+</div>
+
+<div>
+  <p class="mb-0">¿No estás registrado? <a href="#!" class="text-black-50 fw-bold">Sing Up</a>
+</div>  

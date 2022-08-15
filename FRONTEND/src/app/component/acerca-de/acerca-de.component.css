@@ -1,11 +1,15 @@
 .row{
     padding: 20px;
+    background-color: #1a1a1a;
+    border: 2px solid grey;
 }
 
 div{
-    background-color: #151D3B;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     color: white;
+   
+   
    
 }
 
@@ -17,7 +21,7 @@ div{
         border-radius: 100%;
         box-shadow: 3px 3px 8px rgba(211, 210, 210, 0.368);
         left: 5%;
-        top: 600px;
+        top: 750px;
 
     }
 }
@@ -37,6 +41,7 @@ div{
 
 /*etiqueta nombre*/
 #nombre{
+    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: xx-large;
     margin-top: 7px;    
