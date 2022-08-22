@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ExpeLaboralComponent } from './expe-laboral.component';
+import { EditExpeComponent } from './edit-expe.component';
 
-describe('ExpeLaboralComponent', () => {
-  let component: ExpeLaboralComponent;
-  let fixture: ComponentFixture<ExpeLaboralComponent>;
+describe('EditExpeComponent', () => {
+  let component: EditExpeComponent;
+  let fixture: ComponentFixture<EditExpeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ExpeLaboralComponent ]
+      declarations: [ EditExpeComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ExpeLaboralComponent);
+    fixture = TestBed.createComponent(EditExpeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -16,9 +16,13 @@ import { IdiomasComponent } from './component/idiomas/idiomas.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { LoginComponent } from './component/login/login.component';
 import { PortfolioComponent } from './component/portfolio/portfolio.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule} from '@angular/common/http';
 import { interceptorProvider } from './servicios/interceptor-service';
+import { NewExperienciaComponent } from './component/expe-laboral/new-experiencia.component';
+import { EditExpeComponent } from './component/expe-laboral/edit-expe/edit-expe.component';
+import { NeweducacionComponent } from './component/educacion/neweducacion.component';
+import { EditeducacionComponent } from './component/educacion/editeducacion.component';
 
 @NgModule({
   declarations: [
@@ -35,12 +39,16 @@ import { interceptorProvider } from './servicios/interceptor-service';
     FooterComponent,
     LoginComponent,
     PortfolioComponent,
+    NewExperienciaComponent,
+    EditExpeComponent,
+    NeweducacionComponent,
+    EditeducacionComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
-    ReactiveFormsModule,
+    FormsModule,
     HttpClientModule
   ],
   providers: [

@@ -1,10 +1,15 @@
 .row{
     padding: 20px;
     background-color: #1a1a1a;
+    border: 2px solid grey;
+    border-radius: 1rem;
+    margin:auto;
 }
 
 div{
     
+    background-color: #1a1a1a;
+    border-radius: 1rem;
     text-align: left;
     color: white;
 

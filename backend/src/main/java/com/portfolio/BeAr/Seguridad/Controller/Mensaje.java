@@ -9,10 +9,10 @@ package com.portfolio.BeAr.Seguridad.Controller;
  * @author bergo
  */
 public class Mensaje {
-    private String mensaje;
-    
-//constructor
 
+    private String mensaje;
+
+//constructor
     public Mensaje() {
     }
 
@@ -21,7 +21,6 @@ public class Mensaje {
     }
 
 //get y set
-
     public String getMensaje() {
         return mensaje;
     }
@@ -30,6 +29,4 @@ public class Mensaje {
         this.mensaje = mensaje;
     }
 
-    
-    
 }

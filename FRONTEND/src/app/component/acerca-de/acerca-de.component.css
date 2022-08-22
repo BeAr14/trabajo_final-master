@@ -2,6 +2,9 @@
     padding: 20px;
     background-color: #1a1a1a;
     border: 2px solid grey;
+    border-radius: 1rem;
+    margin:auto;
+    box-shadow: 1px 1px 5px rgb(38, 38, 38);
 }
 
 div{
@@ -19,9 +22,9 @@ div{
         position: absolute;
         width: 15%;
         border-radius: 100%;
-        box-shadow: 3px 3px 8px rgba(211, 210, 210, 0.368);
+        box-shadow: 1px 1px 5px gray;
         left: 5%;
-        top: 750px;
+        top: 500px;
 
     }
 }

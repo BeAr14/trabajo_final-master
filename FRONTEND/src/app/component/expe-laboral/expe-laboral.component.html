@@ -1,27 +1,35 @@
-<div class="row">
-    <h1>Experiencia laboral</h1>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-11">
-        <ul>
-            <li>
-                <h1>Empresa:</h1> - 
-                <h3>(years)</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magni fugiat deserunt enim esse, corrupti vitae rerum, maiores laboriosam, laudantium cupiditate. Pariatur porro repellendus dicta, corporis commodi quibusdam voluptate ratione.</p>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <h1>Empresa:</h1> - 
-                <h3>(years)</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magni fugiat deserunt enim esse, corrupti vitae rerum, maiores laboriosam, laudantium cupiditate. Pariatur porro repellendus dicta, corporis commodi quibusdam voluptate ratione.</p>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <h1>Empresa:</h1> - 
-                <h3>(years)</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magni fugiat deserunt enim esse, corrupti vitae rerum, maiores laboriosam, laudantium cupiditate. Pariatur porro repellendus dicta, corporis commodi quibusdam voluptate ratione.</p>
-            </li>
-        </ul>
+
+    <div class="row">
+        <h1>Experiencia laboral</h1>
+        <div class="col-lg-2">
+            <button type="button" class="btn btn-light" routerLink="/nuevaexp" *ngIf="isLogged">Nueva
+                Experiencia</button>
+        </div>
+        <div class="col lg 1"></div>
+        <div class="col-lg-11">
+            <table class="table">
+                <tbody>
+                    <tr *ngFor="let Expelab of expelab">
+                        <td>
+                            <h2>{{Expelab.nombreEx}}</h2>
+                        </td>
+                        <td>
+                            {{Expelab.descripcionEx}}
+                        </td>
+                        <td *ngIf="isLogged">
+                            <button type="button" class="btn btn-light" routerLink="/editExp/{{Expelab.id}}">
+                                <i class="b1 b1-pencil-fill"></i>
+                                EDITAR
+                            </button>
+                        </td>
+                        <td *ngIf="isLogged">
+                            <button type="button" class="btn btn-danger" (click)="delete(Expelab.id)">
+                                <i class="bi bi-trash-fill"></i>
+                                BORRAR
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-</div>

@@ -13,9 +13,9 @@ import { TokenService } from 'src/app/servicios/token.service';
 export class LoginComponent implements OnInit {
   isLogged = false;
   isLogginFail = false;
-  loginUsuario!: LoginUsuario;
-  nombreUsuario!: string;
-  password!: string;
+  loginUsuario: LoginUsuario;
+  nombreUsuario: string;
+  password: string;
   roles: string[] = [];
   errMsj!: string;
   form!: FormGroup;
@@ -51,13 +51,13 @@ export class LoginComponent implements OnInit {
       })
   }
 
-  /*get Email()
+  get Usuario()
   {
-    return this.form?.get('email');
+    return this.form?.get('usuario');
   }
 
   get Password()
   {
     return this.form?.get('password');
-  }*/
+  }
 }

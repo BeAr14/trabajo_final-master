@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.portfolio.BeAr.Seguridad;
 
 import com.portfolio.BeAr.Seguridad.Service.UserDetailsImpl;
@@ -21,12 +18,18 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+/**
+ *
+ * @author bergo
+ */
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-public class MainSecurity extends WebSecurityConfigurerAdapter {
+public class MainSecurity extends WebSecurityConfigurerAdapter{
+   
     @Autowired
     UserDetailsImpl userDetailsServiceImpl;
+    
     @Autowired
     JwtEntryPoint jwtEntryPoint;
     
@@ -42,7 +45,7 @@ public class MainSecurity extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-      http.cors().and().csrf().disable().authorizeRequests().antMatchers("/auth/**")
+      http.cors().and().csrf().disable().authorizeRequests().antMatchers("**")
               .permitAll().anyRequest().authenticated().and().exceptionHandling()
               .authenticationEntryPoint(jwtEntryPoint).and().sessionManagement()
               .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
@@ -65,6 +68,5 @@ public class MainSecurity extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsServiceImpl).passwordEncoder(passwordEncoder());
     }
-
     
 }
