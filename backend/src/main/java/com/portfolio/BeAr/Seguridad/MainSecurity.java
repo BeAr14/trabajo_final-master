@@ -33,16 +33,29 @@ public class MainSecurity extends WebSecurityConfigurerAdapter{
     @Autowired
     JwtEntryPoint jwtEntryPoint;
     
+    /**
+     *
+     * @return
+     */
     @Bean
     public JwtTokenFilter jwtTokenFilter(){
         return new JwtTokenFilter();
     }
     
+    /**
+     *
+     * @return
+     */
     @Bean
     public PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }    
 
+    /**
+     *
+     * @param http
+     * @throws Exception
+     */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
       http.cors().and().csrf().disable().authorizeRequests().antMatchers("**")
@@ -53,17 +66,32 @@ public class MainSecurity extends WebSecurityConfigurerAdapter{
              
     }
 
+    /**
+     *
+     * @return
+     * @throws Exception
+     */
     @Override
     protected AuthenticationManager authenticationManager() throws Exception {
         return super.authenticationManager();
     }
 
+    /**
+     *
+     * @return
+     * @throws Exception
+     */
     @Bean
     @Override
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean(); 
     }
 
+    /**
+     *
+     * @param auth
+     * @throws Exception
+     */
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsServiceImpl).passwordEncoder(passwordEncoder());

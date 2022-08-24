@@ -46,14 +46,14 @@ export class LoginComponent implements OnInit {
         this.isLogged = false;
         this.isLogginFail = true;
         this.errMsj = err.error.mensaje;
-        console.log(this,this.errMsj);
+        console.log(this.errMsj);
         
       })
   }
 
-  get Usuario()
+  get Email()
   {
-    return this.form?.get('usuario');
+    return this.form?.get('Email');
   }
 
   get Password()

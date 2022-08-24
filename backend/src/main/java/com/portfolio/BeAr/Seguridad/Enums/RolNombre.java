@@ -6,6 +6,6 @@ package com.portfolio.BeAr.Seguridad.Enums;
 
 
 public enum RolNombre {
-    ROLE_ACMIN, ROLE_USER;
+    ROLE_ADMIN, ROLE_USER;
     
 }

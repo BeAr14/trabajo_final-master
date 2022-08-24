@@ -10,23 +10,23 @@ package com.portfolio.BeAr.Seguridad.Controller;
  */
 public class Mensaje {
 
-    private String mensaje;
+    private String msj;
 
 //constructor
     public Mensaje() {
     }
 
     public Mensaje(String mensaje) {
-        this.mensaje = mensaje;
+        this.msj = mensaje;
     }
 
 //get y set
     public String getMensaje() {
-        return mensaje;
+        return msj;
     }
 
     public void setMensaje(String mensaje) {
-        this.mensaje = mensaje;
+        this.msj = mensaje;
     }
 
 }

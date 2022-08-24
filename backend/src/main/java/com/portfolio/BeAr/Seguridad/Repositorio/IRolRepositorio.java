@@ -8,9 +8,10 @@ import com.portfolio.BeAr.Seguridad.Entity.Rol;
 import com.portfolio.BeAr.Seguridad.Enums.RolNombre;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.stereotype.Repository;
 
-
+@EnableJpaRepositories
 @Repository
 public interface IRolRepositorio extends JpaRepository<Rol, Integer>{
     Optional<Rol> findRolNombre(RolNombre rolNombre);

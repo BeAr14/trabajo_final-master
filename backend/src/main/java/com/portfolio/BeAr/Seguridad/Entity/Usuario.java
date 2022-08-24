@@ -39,7 +39,7 @@ public class Usuario {
         this.roles = new HashSet<>();
         
     }
-
+ 
     public Usuario(String nombre, String nombreUsuario, String email, String password) {
         this.roles = new HashSet<>();
         
@@ -99,9 +99,5 @@ public class Usuario {
         this.roles = roles;
     }
     
-    
-
-        
-    
-    
+     
 }

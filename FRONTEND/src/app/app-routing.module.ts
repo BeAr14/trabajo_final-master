@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { NumberValueAccessor } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { EditeducacionComponent } from './component/educacion/editeducacion.component';
 import { NeweducacionComponent } from './component/educacion/neweducacion.component';
 import { EditExpeComponent } from './component/expe-laboral/edit-expe/edit-expe.component';
 import { NewExperienciaComponent } from './component/expe-laboral/new-experiencia.component';
@@ -12,7 +12,9 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'nuevaexp', component: NewExperienciaComponent},
   {path:'editExp/:id', component: EditExpeComponent},
-  {path:'nuevaedu', component: NeweducacionComponent}
+  {path:'nuevaedu', component: NeweducacionComponent},
+  {path:'editedu/:id', component: EditeducacionComponent}
+
 ];
 
 @NgModule({

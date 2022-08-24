@@ -4,11 +4,11 @@
       <div class="card bg-dark text-white">
 
     <h1 class="m-5">Iniciar Sesión</h1>
-    <form #f="" (ngSubmit)="onLogin()" novalidate>
+    <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
   
   <div class="form-group">
     <label for="email">Usuario</label>
-    <input type="email" class="form-control" id="nombreUsuario" name="nombreUsuario" placeholder="Escribir email">
+    <input type="email" class="form-control" id="nombreUsuario" name="nombreUsuario" placeholder="Escribir usuario">
   </div>
 
   <div class="form-group">
