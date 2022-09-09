@@ -6,14 +6,15 @@
     <h1 class="m-5">Iniciar Sesión</h1>
     <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
   
+      
   <div class="form-group">
-    <label for="email">Usuario</label>
-    <input type="email" class="form-control" id="nombreUsuario" name="nombreUsuario" placeholder="Escribir usuario">
+    <label for="nombreUsuario">Usuario</label>
+    <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control" placeholder="Escribir usuario" [(ngModel)]="nombreUsuario" required>
   </div>
 
   <div class="form-group">
     <label for="pasword">Contraseña</label>
-    <input type="password" class="form-control" id="password" placeholder="Contraseña">
+    <input type="password" class="form-control" id="password" placeholder="Contraseña" [(ngModel)]="password" required>
   </div>
 
   <div class="form-group form-check">
@@ -27,5 +28,5 @@
 </div>
 
 <div>
-  <p class="mb-0">¿No estás registrado? <a href="#!" class="text-black-50 fw-bold">Sing Up</a>
+  <p class="mb-0">¿No estás registrado? <a href="#!" class="text-black-50 fw-bold">Crear usuario</a>
 </div>  

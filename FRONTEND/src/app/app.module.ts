@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
@@ -15,14 +14,14 @@ import { ProyectosComponent } from './component/proyectos/proyectos.component';
 import { IdiomasComponent } from './component/idiomas/idiomas.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { LoginComponent } from './component/login/login.component';
-import { PortfolioComponent } from './component/portfolio/portfolio.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClient, HttpClientModule} from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
 import { interceptorProvider } from './servicios/interceptor-service';
 import { NewExperienciaComponent } from './component/expe-laboral/new-experiencia.component';
 import { EditExpeComponent } from './component/expe-laboral/edit-expe/edit-expe.component';
 import { NeweducacionComponent } from './component/educacion/neweducacion.component';
 import { EditeducacionComponent } from './component/educacion/editeducacion.component';
+import { homeComponent } from './component/home/home.component';
 
 @NgModule({
   declarations: [
@@ -38,18 +37,19 @@ import { EditeducacionComponent } from './component/educacion/editeducacion.comp
     IdiomasComponent,
     FooterComponent,
     LoginComponent,
-    PortfolioComponent,
     NewExperienciaComponent,
     EditExpeComponent,
     NeweducacionComponent,
     EditeducacionComponent,
+    homeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+  
   ],
   providers: [
     interceptorProvider
