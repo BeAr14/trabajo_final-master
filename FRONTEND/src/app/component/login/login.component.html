@@ -8,13 +8,13 @@
   
       
   <div class="form-group">
+    <input type="user" id="nombreUsuario" name="nombreUsuario" class="form-control" placeholder="Escribir usuario" [(ngModel)]="nombreUsuario" name="nombreUsuario" required />
     <label for="nombreUsuario">Usuario</label>
-    <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control" placeholder="Escribir usuario" [(ngModel)]="nombreUsuario" required>
   </div>
 
   <div class="form-group">
+    <input type="password" name="password" id="password" class="form-control" placeholder="Contraseña" [(ngModel)]="password" name="password" required />
     <label for="pasword">Contraseña</label>
-    <input type="password" class="form-control" id="password" placeholder="Contraseña" [(ngModel)]="password" required>
   </div>
 
   <div class="form-group form-check">
@@ -22,7 +22,9 @@
     <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
   </div>
 
-  <button type="submit" class="btn btn-primary">Enviar</button>
+  <button type="submit" class="btn btn-primary">
+    Enviar
+  </button>
 </form>
 
 </div>

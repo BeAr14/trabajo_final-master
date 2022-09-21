@@ -22,6 +22,7 @@ import { EditeducacionComponent } from './component/educacion/editeducacion.comp
 import { homeComponent } from './component/home/home.component';
 import { EditExperienciaComponent } from './component/experiencia/edit-experiencia.component';
 import { ExperienciaComponent } from './component/experiencia/experiencia.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,9 @@ import { ExperienciaComponent } from './component/experiencia/experiencia.compon
     NgCircleProgressModule.forRoot({}),
     FormsModule,
     HttpClientModule,
+    CommonModule,
+    
+  
   
   ],
   providers: [
