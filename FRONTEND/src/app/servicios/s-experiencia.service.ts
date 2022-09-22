@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class SExperienciaService {
-  expURL = 'http://localhost:8080/explab/';
+  expURL = 'http://localhost:8080/https://backendbear.herokuapp.com/explab/';
 
   constructor(private httpClient: HttpClient) { }
 
