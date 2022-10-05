@@ -1,0 +1,55 @@
+[debug] [2022-09-22T13:02:27.080Z] ----------------------------------------------------------------------
+[debug] [2022-09-22T13:02:27.082Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\bergo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-09-22T13:02:27.082Z] CLI Version:   11.9.0
+[debug] [2022-09-22T13:02:27.083Z] Platform:      win32
+[debug] [2022-09-22T13:02:27.083Z] Node Version:  v18.0.0
+[debug] [2022-09-22T13:02:27.094Z] Time:          Thu Sep 22 2022 10:02:27 GMT-0300 (hora estándar de Argentina)
+[debug] [2022-09-22T13:02:27.095Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-22T13:02:27.156Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-22T13:02:27.157Z] > authorizing via signed-in user (begoarbeloa@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\bergo\OneDrive\Escritorio\TF-ArgentinaPrograma\trabajo_final-master
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-09-22T13:02:59.396Z] Using project from CLI flag: frontend-bear
+[debug] [2022-09-22T13:02:59.404Z] > refreshing access token with scopes: []
+[debug] [2022-09-22T13:02:59.407Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-09-22T13:02:59.407Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-22T13:03:00.035Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-09-22T13:03:00.035Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-22T13:03:00.045Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/frontend-bear [none]
+[debug] [2022-09-22T13:03:01.465Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/frontend-bear 200
+[debug] [2022-09-22T13:03:01.465Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/frontend-bear {"projectId":"frontend-bear","projectNumber":"918750753631","displayName":"frontend-bear","name":"projects/frontend-bear","resources":{"hostingSite":"frontend-bear","realtimeDatabaseInstance":"frontend-bear-default-rtdb"},"state":"ACTIVE","etag":"1_a127f793-5a24-4e95-9a5d-f48678fd7873"}
+[info] i  Using project frontend-bear (frontend-bear) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-09-22T13:08:26.000Z] Error: kill ENOSYS
+    at process.kill (node:internal/process/per_thread:220:13)
+    at process.listener (C:\Users\bergo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:95:15)
+    at process.emit (node:events:527:28)
+[error] 
+[error] Error: An unexpected error has occurred.
